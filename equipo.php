@@ -1,6 +1,6 @@
 <?php
   include('inc/utilities.php');
-  $lan = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+  $lan = getLang();
 ?>
 
 <!DOCTYPE html>
@@ -25,25 +25,7 @@
   <body>
 
     <!-- navigation -->
-    <nav class="navbar-taggie col-sm-6 col-sm-offset-3">
-      <div class="idiomas">
-        <img src="img/spanish_flag.png" >
-        <img src="img/italian_flag.png" >
-      </div>
-      <div class="logo col-sm-12">
-        <h4>Taggie</h4>
-        <img src="img/logo_red.png" alt="logo" />
-      </div>
-
-      <div class="col-sm-12">
-        <ul class="nav-taggie">
-          <li><a href="index"><?php echo translate("Inicio", $lan); ?></a></li>
-          <li><a href="ayuda"><?php echo translate("Ayuda", $lan); ?></a></li>
-          <li><a target="_blank" href="policy">Policy</a></li>
-        </ul>
-      </div>
-
-    </nav>
+    <?php menu(1, $lan); ?>
     <!-- navigation -->
 
     <main class="container-fluid">

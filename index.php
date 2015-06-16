@@ -1,6 +1,6 @@
 <?php
   include('inc/utilities.php');
-  $lan = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+  $lan = getLang();
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
   <body>
 
     <!-- navigation -->
-    <?php menu(); ?>
+    <?php menu(1, $lan); ?>
     <!-- navigation -->
 
     <!-- inicio -->
