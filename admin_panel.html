@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel de administración</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./admin_panel.html">help!</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <form id="buscar-form" class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input id="idSearch" name="idSearch" type="text" class="form-control" placeholder="Id del comentario">
+            </div>
+            <button type="submit" class="btn btn-default">Buscar</button>
+          </form>
+          <form id="buscar-form" class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input id="filterWords" name="filterWords" type="text" class="form-control" placeholder="Filter">
+            </div>
+          </form>
+        </div>
+
+
+
+      </div>
+    </nav>
+
+    <!-- inicio body comment -->
+    <div id="body-comment" class="container">
+    </div>
+    <!-- fin body comment -->
+    <!-- inicio pagination -->
+    <div id="pagination" class="container">
+      <div class="row">
+        <div id="pagination-container" class="col-md-6 col-md-offset-3 page">
+          <ul style="display:none;" class="pagination">
+            <li style="display:none;" ><a href=""></a></li>
+            <li><a id="previous-a" href="">Previous</a></li>
+            <li><a id="next-a" href="">Next</a></li>
+            <li style="display:none;" ><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- fin pagination -->
+    <!-- inicio go back -->
+    <div style="display:none;" id="goback-container" class="container">
+      <a id="goback" href="">Atras</a>
+    </div>
+    <!-- fin go back -->
+
+    <!-- inicio select group -->
+    <div style="display:none;" id="select-group" class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1>Selecciona el grupo que quieres cargar</h1>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th><h4>Nombre</h4></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="body-table">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- fin select group -->
+
+    <!-- inicio login button -->
+    <div style="display:none;" id="login-container" class="container">
+      <div class="col-sm-12">
+        <h1>Inicia sesión para poder gestionar tu grupo</h1>
+        <a class="fb-button" href="#">Login with Facebook</a>
+      </div>
+    </div>
+    <!-- fin login button -->
+
+    <!-- modal dialog -->
+    <div class="modal fade modal-tag" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          </div>
+          <div class="modal-body">
+            <h4>Tags</h4>
+            <form role="form">
+              <div class="form-group">
+                <input class="form-control" id="tag" name="tag" type="text" >
+              </div>
+            </form>
+            <h4>Tipo</h4>
+            <select id="type" class="form-control">
+              <option value="1">INFO</option>
+              <option value="2">TRABAJO</option>
+              <option value="3">COMPRA-VENTA</option>
+              <option value="4">EVENTOS</option>
+              <option value="5">ALOJAMIENTO</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary mod">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- final modal dialog -->
+    <!-- Librerías -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

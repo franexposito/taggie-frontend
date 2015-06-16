@@ -1,0 +1,255 @@
+body{
+  padding-top: 70px;
+  background: #eee;
+}
+
+.navbar-default {
+  background: #12a19a;
+}
+
+.navbar-default .navbar-header a {
+  font-size: 30px;
+}
+
+.navbar-default .navbar-header a,
+.navbar-default .navbar-nav li > a{
+  color: #fff;
+}
+
+.navbar-default .navbar-header a:hover,
+.navbar-default .navbar-nav li > a:hover{
+  color: #3c3c3b;
+}
+
+.form-group .form-control {
+  margin: 0;
+  border: none;
+  border: 1px solid #0e897d;
+  background: #0e897d;
+  color: white;
+}
+
+.navbar-form .btn-default {
+  border-radius: 0;
+  border: 1px solid #0e897d;
+  background: #0e897d;
+  color: white;
+}
+
+.comenta-container {
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(17, 17, 17, 0.25);
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.comenta-container .picture img {
+  background: #555;
+}
+
+@media (max-width: 768px){
+  .comenta-container .picture img {
+    display: none;
+  }
+
+  .comenta-container {
+    margin: 5px;
+  }
+}
+
+.comenta-container .comenta-content .name > h2{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.comenta-container .comenta-content .time > h3 {
+  margin: 0;
+  font-size: 12px;
+  color: #858582;
+  margin-bottom: 2px;
+}
+
+.mod,
+.set {
+  background: #0b6f6a;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 0;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mod:active,
+.mod:hover,
+.set:active,
+.set:hover{
+  background: #3c3c3b;
+  color: #fff;
+}
+
+.dropdown-toggle {
+  border: 1px solid #0b6f6a;
+  color: #0b6f6a;
+  border-radius: 0;
+  background: white;
+  width: 100%;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active,
+.dropdown-toggle:focus {
+  border: 1px solid #0b6f6a;
+  background: #0b6f6a;
+  color: white;
+}
+
+.dropdown-menu {
+  width: 100%;
+  border-radius: 0;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:active {
+  color: #fff;
+  background: #0b6f6a;
+}
+
+.form-control {
+  border: 1px solid #0b6f6a;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: 0;
+}
+
+.modal-content h4 {
+  color: #3c3c3b;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pagination {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.pagination li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+.pagination li a {
+  width: 100px;
+  text-align: center;
+  background: white;
+  color: #0b6f6a;
+  border: 0;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 3px rgba(17, 17, 17, 0.25);
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+  background: #0b6f6a;
+  color: white;
+  border: 1px solid #0b6f6a;
+}
+
+#select-group .table {
+  background: white;
+  box-shadow: 0px 1px 3px rgba(17, 17, 17, 0.25);
+}
+
+#select-group .table a {
+  color: #0b6f6a;
+}
+
+#select-group .table a:hover,
+#select-group .table a:focus {
+  color: #12a19a;
+}
+
+#select-group h1 {
+  text-align: center;
+  font-size: 26px;
+  color: #3c3c3b;
+}
+
+#select-group h4 {
+  margin: 0;
+  color: #3c3c3b;
+}
+
+#select-group h5 {
+  color: #3c3c3b;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 10px;
+}
+
+#select-group .table td {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#login-container {
+  text-align: center;
+}
+
+#login-container h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0px 1px 3px rgba(17, 17, 17, 0.25);
+}
+
+.fb-button {
+  padding: 12px 50px;
+  background: #3B5999;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #3B5999;
+  box-shadow: 0px 1px 3px rgba(17, 17, 17, 0.25);
+}
+
+.fb-button:hover,
+.fb-button:focus {
+  color: white;
+  background: #2f477a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.taggie {
+  margin-right: 2px;
+  display:inline-block;
+  height: 35px;
+  padding: 0 10px;
+  background: #0b6f6a;
+  border-radius: 25px;
+  line-height: 35px;
+}
+
+.taggie a {
+  color: white;
+}
+
+.tags-label h3{
+  margin: 0;
+  font-size: 18px;
+  line-height: 35px;
+}
