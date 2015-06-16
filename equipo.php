@@ -25,7 +25,7 @@
   <body>
 
     <!-- navigation -->
-    <?php menu(1, $lan); ?>
+    <?php menu(2, $lan); ?>
     <!-- navigation -->
 
     <main class="container-fluid">

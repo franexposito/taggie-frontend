@@ -38,24 +38,41 @@
   function menu($type, $lan) {
     switch ($type) {
       case 1:
-        $var1 = array('text' => translate('Equipo', $lan), 'url' => 'equipo');
-        $var2 = array('text' => translate('Ayuda', $lan), 'url' => 'ayuda');
+        if ($_GET['lan'] == 'it') {
+          $var1 = array('text' => translate('Equipo', $lan), 'url' => 'equipo?lan=it');
+          $var2 = array('text' => translate('Ayuda', $lan), 'url' => 'ayuda?lan=it');
+        } else {
+          $var1 = array('text' => translate('Equipo', $lan), 'url' => 'equipo');
+          $var2 = array('text' => translate('Ayuda', $lan), 'url' => 'ayuda');
+        }
+
         break;
       case 2:
-        $var1 = array('text' => translate('Inicio', $lan), 'url' => '/');
-        $var2 = array('text' => translate('Ayuda', $lan), 'url' => 'ayuda');
+        if ($_GET['lan'] == 'it') {
+          $var1 = array('text' => translate('Inicio', $lan), 'url' => '/help/?lan=it');
+          $var2 = array('text' => translate('Ayuda', $lan), 'url' => 'ayuda?lan=it');
+        } else {
+          $var1 = array('text' => translate('Inicio', $lan), 'url' => '/help');
+          $var2 = array('text' => translate('Ayuda', $lan), 'url' => 'ayuda');
+        }
+
         break;
       case 3:
-        $var1 = array('text' => translate('Inicio', $lan), 'url' => '/');
-        $var2 = array('text' => translate('Equipo', $lan), 'url' => 'equipo');
+        if ($_GET['lan'] == 'it') {
+          $var1 = array('text' => translate('Inicio', $lan), 'url' => '/help?lan=it');
+          $var2 = array('text' => translate('Equipo', $lan), 'url' => 'equipo?lan=it');
+        } else {
+          $var1 = array('text' => translate('Inicio', $lan), 'url' => '/help');
+          $var2 = array('text' => translate('Equipo', $lan), 'url' => 'equipo');
+        }
         break;
     }
 
     echo '
       <nav class="navbar-taggie col-sm-6 col-sm-offset-3">
         <div class="idiomas">
-          <img src="img/spanish_flag.png" >
-          <img src="img/italian_flag.png" >
+          <a href="?lan=es"><img src="img/spanish_flag.png" ></a>
+          <a href="?lan=it"><img src="img/italian_flag.png" ></a>
         </div>
         <div class="logo col-sm-12">
           <h4>Taggie</h4>

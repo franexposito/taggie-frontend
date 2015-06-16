@@ -54,8 +54,7 @@
           <div class="col-sm-6 col-sm-offset-3 what2">
               <i class="fa fa-newspaper-o fa-4x"></i>
               <h2><?php echo translate("Filtra los contenidos", $lan); ?></h2>
-              <p><?php echo translate("Filtra las entradas según su contenido. Puede introducir 'banco' y se mostrarán todas las entradas
-                relativas a los bancos.", $lan); ?></p>
+              <p><?php echo translate("Filtra las entradas según su contenido. Puede introducir 'banco' y se mostrarán todas las entradas relativas a los bancos.", $lan); ?></p>
             </div>
           <div class="col-sm-6 col-sm-offset-3 what3">
               <i class="fa fa-clock-o fa-4x"></i>
